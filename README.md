@@ -1,22 +1,25 @@
-# A Guide to Deno Core
+# Deno 核心指南
 
-## What is this?
+## 这是什么？
 
-This is a guide to the design and structure of Deno, a secure server-side TypeScript runtime.
+这是一本介绍 Deno 的设计与结构的指南。 Deno 是一个注重安全性的服务端 Typescript 运行环境。
 
-This guide is created and maintained by some contributors to Deno.
+这本指南由 Deno 的贡献者创建与维护。
 
-### Authors
+### 作者
 
 1. [@kevinkassimo](https://github.com/kevinkassimo)
 2. [@monkingxue](https://github.com/monkingxue)
 
-## DISCLAIMER
+### 译者
 
-**THIS IS NOT AN OFFICIAL DOCUMENT.**
+1. [@louy2](https://github.com/louy2)
 
-This document has no affiliation with the `denoland` organization and its collaborators.
+## 声明
 
+**本文档非官方文档。**
+
+本文档与组织 `denoland` 及其合作者无关。
 
 
 

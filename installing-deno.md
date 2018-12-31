@@ -1,29 +1,29 @@
-# Installing Deno
+# 安装 Deno
 
-## Get Deno Release Binary
+## 获取 Deno 发布版程序
 
-Deno is still at very early development stage. The current releases are 0.2.x, which are defined to be "mildly usable" and is mostly for developer preview.
+Deno 还在十分早期的开发阶段。 目前的发布版是 0.2.x，可以视为“勉强可用”，主要供开发者预览试用。 
 
-To install Deno release binary, run the following commands on \*nix
+要在 \*nix 系统中安装 Deno 发布版, 请运行以下命令：
 
 ```bash
 curl -L https://deno.land/x/install/install.py | python
 export PATH=$HOME/.deno/bin:$PATH
 ```
 
-On windows, you might want to install through Powershell:
+在 Windows 系统中安装时, 请在 Powershell 中运行以下命令:
 
 ```text
 iex (iwr https://deno.land/x/install/install.ps1)
 ```
 
-Deno is installed through scripts from [deno\_install](https://github.com/denoland/deno_install). If you encountered any installation problems, submit an issue there.
+Deno 的安装过程由位于 [deno\_install](https://github.com/denoland/deno_install) 的脚本负责。如果你在安装过程中遇到任何问题，请到那里提交 issue。
 
-## Compile Deno From Source
+## 编译 Deno 源码
 
-If you are interested in contributing to Deno, you might want to compile Deno from source yourself.
+如果你有心参与 Deno 开发，你可能想要自己从源码编译 Deno 。
 
-Run the following commands to get make a debug build
+运行以下命令会以调试用设置编译 Deno 。
 
 ```bash
 # Fetch deps.
@@ -36,20 +36,20 @@ cd deno
 ```
 
 {% hint style="info" %}
-Notice that in some countries, domains, such as google.com, are blocked from access. You might want to use a VPN or alternative tools when running `./tools/setup.py`.
+在某些国家，google.com 之类的域名受到限制无法访问。你可能需要通过 VPN 或类似工具运行 `./tools/setup.py` 。
 {% endhint %}
 
-Deno is built with GN and Ninja, tools that are used also by the Chromium team. The built files will be located at `target/debug/`
+Deno 的编译使用 GN 和 Ninja ，它们也是 Chromium 团队的编译工具。编译结果会放在 `target/debug/` 。
 
-Alternatively, to create a release build for evaluation, set DENO\_BUILD\_MODE to release on build:
+另外，要以发布用设置编译试用的话，请将 DENO\_BUILD\_MODE 设为 release 再编译:
 
 ```bash
 DENO_BUILD_MODE=release ./tools/build.py
 ```
 
-The built files will be located at `target/release/`
+编译结果会放在 `target/release/` 。
 
-Deno also comes with Cargo build support:
+Deno 也支持使用 Cargo 编译：
 
 ```bash
 cargo build
